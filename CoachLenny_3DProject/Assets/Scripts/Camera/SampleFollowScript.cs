@@ -25,6 +25,9 @@ public class SampleFollowScript : MonoBehaviour
     public GameObject FollowThisObject;
     private void Awake()
     {
+        //Make sure to put All CameraList[].gameObjects here
+        //and set the 2nd and 3rd camera to be false,
+        //and leave the first camera active at the start
         CameraList[0].gameObject.SetActive(true);
         CameraList[1].gameObject.SetActive(false);
         CameraList[2].gameObject.SetActive(false);
